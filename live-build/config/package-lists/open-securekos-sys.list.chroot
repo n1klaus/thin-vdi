@@ -1,0 +1,44 @@
+avahi-daemon
+apt-transport-https
+bluez-
+console-data
+console-setup
+cpuid
+cryptmount cryptsetup*	 
+curl
+dkms linux-headers-686-pae- linux-headers-amd64-
+dmidecode
+dnsutils
+fuse-
+freerdp-x11
+gettext
+inotify-tools
+kbd
+libdigest-md5-file-perl libnet-ip-perl libxml-simple-perl libproc-daemon-perl ethtool libio-compress-perl read-edid libcrypt-ssleay-perl libnet-cups-perl libnet-netmask-perl libmodule-install-perl libnet-snmp-perl
+libwebkitgtk-1.0-0 libproxy1-plugin-webkit
+ldap-utils
+locales
+locales-all
+locate
+lshw 
+mc
+netcat-traditional
+net-tools
+ocsinventory-agent
+#openntpd
+#openssh-client
+#openssh-server
+openvpn
+pciutils 
+pulseaudio-module-bluetooth-
+rar
+realmd 
+secure-delete
+sudo
+system-config-printer-common-
+usb-modeswitch
+usbutils
+wmctrl
+xorriso
+zip
+

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+LOGFILE="/dev/null"
+COLOR='\e[91m'
+
+if [ -r  /live-build/config/hooks/normal/sk.00-functions.utils ]; then 
+    . /live-build/config/hooks/normal/sk.00-functions.utils
+fi
+
+####################################################################################################################################
+# Additional security-wise settings.
+####################################################################################################################################
+
+## Disable some kernel modules.
+#for module in bluetooth btusb btbcm btintel btrtl irda can ax25 batman-adv ieee802154 lapb ipx tipc sctp dccp; do
+#    echo -e "install $module /bin/false\nblacklist $module" > /etc/modprobe.d/${module}.conf
+#done
+
+##for module in /lib/modules/$(uname -r)/kernel/drivers/net/wireless/*; do
+##    echo -n "blacklist " >> /etc/modprobe.d/wireless.conf
+##    echo $module | awk -F'/' '{print $9}' >> /etc/modprobe.d/wireless.conf
+##done
+#for module in cfg80211 wl admtek ath atmel broadcom cisco intel intersil marvell mediatek ralink ray_cs.ko realtek rsi zydas; do
+#    echo "blacklist $module" >> /etc/modprobe.d/wireless.conf  
+#done
