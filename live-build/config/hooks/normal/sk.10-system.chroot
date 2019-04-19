@@ -49,6 +49,9 @@ fi
     # And disable Openntpd (if installed).
     systemctl disable openntpd |&log
 
+    # Remmina from Backports.
+    apt-get install -y -t stretch-backports remmina-plugin* |&log
+
     # USERS
     ###############################################
 

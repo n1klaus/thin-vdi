@@ -19,7 +19,11 @@ chmod -v 700 /usr/bin/c[89]9-gcc
 chmod -v 700 /usr/bin/chsh
 chmod -v 700 /usr/bin/cpan
 chmod -v 700 /usr/bin/elfedit
+
 chmod 750 /usr/bin/gnome-terminal
 chown root:securek /usr/bin/gnome-terminal
+
+chmod 750 /usr/lib/firefox-esr/firefox-esr
+chown root:securek /usr/lib/firefox-esr/firefox-esr
 
 exit 0

@@ -1,5 +1,5 @@
 [org/freedesktop/tracker/miner/files]
-index-recursive-directories=['&DESKTOP', '/home/securek/DigitalArx', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS']
+index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS']
 sched-idle='first-index'
 ignored-directories=['core-dumps', 'CVS', 'lost+found', 'po']
 ignored-files=['*~', 'autom4te', '*.aux', 'confdefs.h', 'config.status', 'configure', 'confstat', 'conftest', '*.csproj', '*.gmo', '*.in', '*.la', 'libtool', '*.lo', '*.loT', 'ltmain.sh', '*.lzo', '*.m4', 'Makefile', '*.nvram', '*.o', '*.omf', '*.orig', '*.part', '*.pc', '*.po', '*.rcore', '*.rej', 'SCCS', '*.tmp', '*.vm*', '*.vmdk']
@@ -10,9 +10,6 @@ low-disk-space-limit=-1
 
 [org/freedesktop/tracker/extract]
 sched-idle='first-index'
-
-[org/gnome/Contacts]
-did-initial-setup=true
 
 [org/gnome/settings-daemon/plugins/power]
 ambient-enabled=false
@@ -176,71 +173,6 @@ icon-size=18
 tray-pos='right'
 tray-order=1
 
-[org/gnome/baobab/ui]
-window-state=128
-window-size=(960, 600)
-
-[org/gnome/gedit/preferences/ui]
-show-tabs-mode='auto'
-
-[org/gnome/gedit/plugins/filebrowser]
-virtual-root='file:///tmp'
-tree-view=true
-root='file:///'
-
-[org/gnome/gedit/plugins]
-active-plugins=['time', 'spell', 'modelines', 'filebrowser', 'docinfo']
-
-[org/gnome/gedit/state/window]
-size=(1174, 499)
-state=128
-bottom-panel-size=140
-side-panel-size=200
-side-panel-active-page='GeditWindowDocumentsPanel'
-
-[org/gnome/clocks/state/window]
-size=(882, 690)
-state=128
-panel-id='timer'
-
-[org/gnome/nautilus/preferences]
-default-folder-viewer='icon-view'
-search-filter-time-type='last_modified'
-
-[org/gnome/nautilus/window-state]
-geometry='1005x682+159+31'
-maximized=false
-
-[org/gnome/nautilus/desktop]
-home-icon-visible=false
-volumes-visible=false
-trash-icon-visible=false
-
-[org/gnome/nautilus/icon-view]
-default-zoom-level='standard'
-
-[org/gnome/nautilus/list-view]
-default-zoom-level='standard'
-
-[org/gnome/photos]
-window-maximized=true
-
-[org/gnome/file-roller/listing]
-sort-method='name'
-name-column-width=250
-sort-type='ascending'
-list-mode='as-folder'
-show-path=false
-
-[org/gnome/file-roller/ui]
-sidebar-width=200
-window-height=480
-window-width=708
-
-[org/gnome/evolution-data-server]
-network-monitor-gio-name=''
-migrated=true
-
 [org/gnome/desktop/interface]
 clock-show-date=true
 font-name='Cantarell 12'
@@ -250,31 +182,11 @@ icon-theme='Ultra-Flat'
 gtk-theme='Materia'
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-tweak-tool', 'remmina', 'digitalarx', 'gpk-update-viewer']
+application-children=['gpk-update-viewer']
 show-in-lock-screen=false
-
-[org/gnome/desktop/notifications/application/gnome-tweak-tool]
-application-id='gnome-tweak-tool.desktop'
 
 [org/gnome/desktop/notifications/application/gpk-update-viewer]
 application-id='gpk-update-viewer.desktop'
-
-[org/gnome/desktop/notifications/application/digitalarx]
-application-id='digitalarx.desktop'
-
-[org/gnome/desktop/notifications/application/remmina]
-application-id='remmina.desktop'
-
-[org/gnome/desktop/app-folders]
-folder-children=@as []
-
-[org/gnome/desktop/app-folders/folders/LibreOffice]
-apps=['libreoffice-base.desktop', 'libreoffice-calc.desktop', 'libreoffice-writer.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop']
-name='LibreOfice'
-
-[org/gnome/desktop/app-folders/folders/System]
-apps=['gnome-control-center.desktop', 'system-config-printer.desktop', 'gucharmap.desktop', 'org.gnome.font-viewer.desktop', 'gnome-terminal.desktop', 'factory-reset.desktop']
-name='System'
 
 [org/gnome/desktop/screensaver]
 picture-uri='file:///usr/share/backgrounds/gnome/Lockscreen.png'
@@ -287,9 +199,6 @@ secondary-color='#000000000000'
 natural-scroll=false
 tap-to-click=true
 send-events='enabled'
-
-[org/gnome/desktop/search-providers]
-sort-order=['gnome-contacts.desktop', 'gnome-documents.desktop', 'nautilus.desktop']
 
 [org/gnome/desktop/privacy]
 remember-recent-files=true
@@ -337,14 +246,5 @@ location-mode='path-bar'
 selected-color=(true, 0.82745098039215681, 0.84313725490196079, 0.81176470588235294, 1.0)
 custom-colors=[(0.0, 0.0, 0.0, 0.0)]
 
-[org/gnome/desktop/app-folders]
-folder-children=['Utilities']
-
-[org/gnome/desktop/app-folders/folders/Utilities]
-translate=true
-categories=['X-GNOME-Utilities']
-apps=['org.gnome.baobab.desktop', 'deja-dup-preferences.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.FileRoller.desktop', 'gnome-calculator.desktop', 'gnome-dictionary.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gnome-tweak-tool.desktop', 'gucharmap.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop', 'gnome-control-center.desktop', 'flash-player-properties.desktop', 'JB-controlpanel-jdk8.desktop', 'tracker-preferences.desktop', 'org.gnome.Software.desktop', 'gufw.substitute', 'synaptic.substitute', 'gdebi.substitute']
-excluded-apps=['eog.desktop', 'evince.desktop', 'org.gnome.FileRoller.desktop', 'gnome-calculator.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop']
-name='X-GNOME-Utilities.directory'
 
 
