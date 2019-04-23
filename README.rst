@@ -139,7 +139,7 @@ How to install::
 	desktop.) [yes]: 
 
 	Multimedia Redirection (MMR)(With multimedia redirection (MMR), the
-	multimedia stream is processed on the client system.) [yes]: 
+	multimedia stream is processed on the client system.) [yes]: no
 
 	Smart Card(The Smart Card component enables Smart Card device
 	redirection from your local computer to the remote desktop.) [yes]: 
@@ -169,7 +169,6 @@ How to install::
 		Virtual Printing
 		SerialPort Redirection
 		Client Drive Redirection
-		Multimedia Redirection (MMR)
 		Smart Card
 		VMware Horizon(R) Virtualization Pack for Skype for Business
 		Real-Time Audio-Video
@@ -188,6 +187,6 @@ How to install::
 	service(s) can be ready before the Horizon Client starts)[yes/no]: yes
 
 	Do you want to check your system compatibilities for Horizon Client,
-	this Scan will NOT collect any of your data?[yes/no]: no
+	this Scan will NOT collect any of your data?[yes/no]: yes
 
 

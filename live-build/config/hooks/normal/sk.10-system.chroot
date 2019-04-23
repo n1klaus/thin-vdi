@@ -52,6 +52,10 @@ fi
     # Remmina from Backports.
     apt-get install -y -t stretch-backports remmina-plugin* |&log
 
+    # TeamViewer
+    dpkg -i /storage/teamviewer_amd64.deb |&log
+    apt-get install -f -y |&log
+
     # USERS
     ###############################################
 
@@ -127,8 +131,8 @@ EOF
 
     # Open Secure-K OS version file. Don't move the following lines before the kernel installation.
     cat > /etc/os-release <<EOF
-NAME="Open Secure-K OS Thin"
-PRETTY_NAME="Open Secure-K OS Thin"
+NAME="Open Secure-K OS ThinClient"
+PRETTY_NAME="Open Secure-K OS ThinClient"
 VERSION="1.0"
 BUILD="$(date +'%Y%m%d:%H%m')"
 BUILD_ID="$(date +'%Y%m%d:%H%m')"

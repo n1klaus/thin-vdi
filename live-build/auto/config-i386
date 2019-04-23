@@ -8,8 +8,8 @@ lb config noauto --clean \
     --archive-areas "main contrib non-free" \
     --iso-publisher "LumIT Labs" \
     --iso-preparer "LumIT Labs" \
-    --iso-volume "Open Secure-K OS" \
-    --iso-application "Open Secure-K OS" \
+    --iso-volume "Open Secure-K OS ThinClient" \
+    --iso-application "Open Secure-K OS ThinClient" \
     --firmware-chroot false \
     --initsystem "systemd" \
     --security true \

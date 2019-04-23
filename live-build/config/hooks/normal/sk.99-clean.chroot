@@ -21,6 +21,8 @@ do
 done
 
 # Final cleanups.
+rm -fR /storage
+
 apt-get clean
 apt-get -y --purge autoremove
 
