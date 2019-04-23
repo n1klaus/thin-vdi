@@ -17,7 +17,7 @@ What is
 Screenshots
 ^^^^^^^^^^^
 
-.. image:: open-securek-os-thin-horizon.png
+.. image:: screenshots/open-securek-os-thin-horizon.png
 
 
 
