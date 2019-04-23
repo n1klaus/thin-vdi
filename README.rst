@@ -3,7 +3,6 @@ Open Secure-K OS ThinClient
 
 What is
 ^^^^^^^
-
     **Open Secure-K OS ThinClient** is the most secure encrypted thin client operating system for VDI and RDP. It's a live Linux-based operating system with kernel update and indestructible filesystem. 
 
     Unique system features are:
@@ -16,7 +15,6 @@ What is
 
 Screenshots
 ^^^^^^^^^^^
-
 .. image:: screenshots/open-securek-os-thin-horizon.png
 
 
@@ -26,24 +24,17 @@ For users
 
 Usage
 ^^^^^
-
     * Download the pre-built IMG image file from https://github.com/LumIT-Labs/thin-vdi/releases or build it yourself (see the For developers section). 
     * Write the image onto a USB key. See the section How to write below for more.
     * Open Secure-K OS ThinClient features a native encrypted data persistence, which is protected by a passphrase. If you opt for downloading the pre-built IMG image, the passphrase is hardwired and immutable (securek) and the filesystem space (encrypted partition) is limited in size.
     * Boot the live operating system and type in the decryption passphrase (securek). Open Secure-K OS ThinClient boots as any other Linux live operating system.
     * The VDI/RDP user is created upon the first boot. 
+    * VDI/RDP user has got very limited capabilities for security.
     * The administrative user is hidden from the login manager: login as securek, with password: securek in order to set up the system for the day-to-day usage. Use sudo for super-cow powers. Change the default password for security.
-
-
-Programs
-^^^^^^^^
-
-Open Secure-k OS ThinClient comes with a bunch of RDP programs installed and it's ready for the installation of commercial VDI software. Because the best clients for VDI (Horizon / Citrix) are not open source and/or have a EULA users must accept, they must be installed manually. Fortunately this process is simple and straightforward. See the VDI software installation section below.
 
 
 How to write
 ^^^^^^^^^^^^
-
 Open Secure-K OS ThinClient can be deployed onto a USB key as any other Linux live operating system.
 
 **Linux**
@@ -68,18 +59,27 @@ Being a UNIX-like operating system, OS X users can make use of dd as the Linux p
 Plug the USB key into your computer and launch Etcher; now load the .img file image and write it to the key.
 
 
+Programs
+^^^^^^^^
+Open Secure-K OS ThinClient comes with a short list of RDP programs installed (only the best ones for Linux!) and it's ready for the installation of commercial VDI software. Because the best clients for VDI (Horizon / Citrix) are not open source and/or have a EULA users must accept, they must be installed manually. Fortunately this process is simple and straightforward; please see the VDI software installation section below (at the bottom of the page).
+
+
+Domain users
+^^^^^^^^^^^^
+Open Secure-K OS ThinClient is also desiged for domain users (Active Directory), please contact us for more information.
+
+
+
 For developers
 ==============
 
 Contribute to the project
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
 Open Secure-K OS ThinClient is a **free and open source** project by LumIT Labs; code and documentation contributions are welcome.
 
 
 How to build the initial ISO image
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 A **Debian Stretch** host is required for the build; other Debian-derived systems may also work.
 
 The Open Secure-K OS ThinClient ISO image is built using the standard Debian **live-build** framework, so you first need to install it::
@@ -98,10 +98,9 @@ A .iso image will be built according to your host architecture (if building on a
 
 How to deploy
 ^^^^^^^^^^^^^
-
 **Open Secure-K OS Deployer** (https://github.com/LumIT-Labs/open-securekos-deployer) is the deployment system for writing the initial Open Secure-K OS ThinClient ISO image onto a USB key - it will create the liveng partitioning scheme: run the Deployer, select the image you have built and type in a passphrase of your choice for LUKS-encrypting the data persistence partition (remember: Open Secure-K OS ThinClient features native encrypted persistence), then click on Write. Deployer will write the Open Secure-K OS ThinClient ISO image onto all the plugged-in (and listed) USB devices, thus creating the complete Open Secure-K OS ThinClient operating system.
 
-Some Open Secure-K OS notes:
+Some Open Secure-K OS ThinClient notes:
 
 * use sudo for super-cow powers;
 * during the boot, you will be asked for the decryption password of the data persistence partition - the secret you enter while deploying;
@@ -113,7 +112,15 @@ Some Open Secure-K OS notes:
 VDI software installation
 =========================
 
-VMware Horizon::
+VMware Horizon
+^^^^^^^^^^^^^^
+How to install::
+
+        Log in with the securek user.
+
+        Download the VMware Horizon Client for Linux from its website by using the installed browser (Firefox).
+
+        Open the terminal emulator and do sudo -i.
 
 	cd /path/to/file
 	# /home/securek/Downloads for the English language desktops.
@@ -182,6 +189,5 @@ VMware Horizon::
 
 	Do you want to check your system compatibilities for Horizon Client,
 	this Scan will NOT collect any of your data?[yes/no]: no
-
 
 
