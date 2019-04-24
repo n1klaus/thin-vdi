@@ -48,13 +48,13 @@ Run all the following commands as root or with sudo in a terminal emulator:
     * please note that dd always refers to the whole disk, so do not use /dev/sdx1 but /dev/sdx, as an example.
 
 **Microsoft Windows**
-Windows operating system's users can write the image by the use of Win32DiskImager (download from SourceForge: https://sourceforge.net/projects/win32diskimager) or Etcher (https://tails.boum.org/etcher/Etcher-Portable.exe).
+Windows operating system's users can write the image by the use of Win32DiskImager (download from SourceForge: https://sourceforge.net/projects/win32diskimager) or Etcher (https://www.balena.io/etcher).
 
 Plug the USB key into your computer and launch Win32DiskImager/Etcher; now load the .img file image and write it to the key.
 
 **Apple OS X**
 
-Being a UNIX-like operating system, OS X users can make use of dd as the Linux people or they can use Etcher as the Windows ones, https://tails.boum.org/etcher/Etcher.dmg.
+Being a UNIX-like operating system, OS X users can make use of dd as the Linux people or they can use Etcher as the Windows ones, https://www.balena.io/etcher.
 
 Plug the USB key into your computer and launch Etcher; now load the .img file image and write it to the key.
 
@@ -64,10 +64,11 @@ Programs
 Open Secure-K OS ThinClient comes with a short list of RDP programs installed (only the best ones for Linux!) and it's ready for the installation of commercial VDI software. Because the best clients for VDI (Horizon / Citrix) are not open source and/or have a EULA users must accept, they must be installed manually. Fortunately this process is simple and straightforward; please see the VDI software installation section below (at the bottom of the page).
 
 
-Domain users
-^^^^^^^^^^^^
-Open Secure-K OS ThinClient is also desiged for domain users (Active Directory), please contact us for more information.
+Domain and Enterprise users
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Anti-tampering measures performed during the bootstrap are available in the Enterprise build: a self-checking kernel component is responsible of verifying that system files have not been tampered, preventing the virtualization of the image, the use of the init= kernel boot parameter, and so on. This way corporate users cannot modify the filesystem and so inject files, programs or install anything. Open Secure-K OS ThinClient Enterprise is also desiged for domain users (Active Directory).
 
+Enterprises are strongly encouraged to use the **Secure-K OS ThinClient Enterprise** build. Please contact us at labs@lumit.it for more information.
 
 
 For developers
